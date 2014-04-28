@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 2.8)
+
+add_library(DoseeCommon STATIC src/testhello.c)
+install (TARGETS DoseeCommon 
+ARCHIVE DESTINATION lib)
+INSTALL(FILES src/testhello.h DESTINATION inc)
+
